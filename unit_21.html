@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Unit 20</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unit 21. Основы touch событий</h1>
+        <section>
+            <p><b>Task 12.</b></p>
+            <p>Изучите html код внутри div-12-wrapper.</p>
+            <p>1. Добавьте на кнопку nex событие click, touch так, чтобы при событии запускалась функция nextFunction и
+                активным становилось изображение следующее за выделенным классом active-img (рамкой). Соответственно, на
+                активном изображении появляется рамка, а остальные - лишаются рамки.</p>
+            <p>2. Добавьте на кнопку prev событие click, touch так, чтобы при событии запускалась функция prevFunction и
+                активным становилось изображение до выделенного классом active-img (рамкой). Соответственно, на активном
+                изображении появляется рамка, а остальные - лишаются рамки.</p>
+            <p>3. Учтите краевые эффекты - когда мы доходим до конца или начала, то нажатие кнопки должно приводить к
+                перемещению рамки в начало или конец изображений.</p>
+            <p>4. Добавьте кнопку reset (функция resetFunction), нажатие которой сбрасывает активное изображение на
+                нулевое. </p>
+            <p>5. Добавьте во все действия следующее - в изображении img-12-max заменяется src на активную. Т.е.
+                произошло событие - заменилась главная картинка.</p>
+            <div>
+
+                <div class="div-12-wrapper">
+                    <img src="img/1.png" alt="" class="img-12-min active-img">
+                    <img src="img/2.png" alt="" class="img-12-min">
+                    <img src="img/3.png" alt="" class="img-12-min">
+                    <img src="img/4.png" alt="" class="img-12-min">
+                    <img src="img/5.png" alt="" class="img-12-min">
+                    <img src="img/6.png" alt="" class="img-12-min">
+                </div>
+                <div class="div-12-max">
+                    <img src="img/1.png" alt="" class="img-12-max">
+                </div>
+                <p class="img-12-text"></p>
+                <button class="button-primary prev">Prev</button>
+                <button class="button-primary next">Next</button>
+                <button class="button-primary reset">Reset</button>
+                <div class="out-11">
+                </div>
+        </section>
+
+
+
+    </div>
+
+    <script src="unit_21.js"></script>
+</body>
+
+</html>
